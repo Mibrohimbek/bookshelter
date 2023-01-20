@@ -8,14 +8,14 @@ let lsEmail = localStorage.getItem("email");
 let lsPass = localStorage.getItem("password");
 
 if (lsEmail == email && password == lsPass) {
-  window.location.replace("../pages/index.html");
+  window.location.replace("../index.html");
 }
 
 form.addEventListener("submit", (e) => {
   if (emailInput.value == email && passInput.value == password) {
     localStorage.setItem("email", emailInput.value);
     localStorage.setItem("password", passInput.value);
-    window.location.replace("../pages/index.html");
+    window.location.replace("../index.html");
   }else{
     alert('Password yoki email xato')
   }

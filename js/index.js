@@ -17,12 +17,12 @@ if (
   localStorage.getItem("email") != email ||
   localStorage.getItem("password") != password
 ) {
-  window.location.replace("../pages/login.html");
+  window.location.replace("./pages/login.html");
 }
 
 logout.addEventListener("click", () => {
   localStorage.clear();
-  window.location.replace("../pages/login.html");
+  window.location.replace("./pages/login.html");
 });
 
 bookmark_close.addEventListener("click", () => {
