@@ -1,0 +1,485 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sm-container {
+    margin: 0 auto;
+    padding: 0px 40px !important;
+    max-width: 1500px !important;
+}
+
+.head {
+    padding: 11px 0;
+
+    .search {
+        background: #F8FAFD;
+        box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+        border-radius: 30px;
+        background-image: url('../images/search.png');
+        background-repeat: no-repeat;
+        height: 48px;
+        background-position: 10px;
+        width: 670px;
+        padding-left: 48px;
+        border: none !important;
+
+        &:focus {
+            outline: 2px solid orange;
+        }
+    }
+
+
+    .logout {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+        background: #0D75FF;
+        border-radius: 4px;
+        padding: 11px 23px;
+        border: none !important;
+    }
+}
+
+#result {
+    height: 56px;
+    width: 100%;
+
+    .order {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+        width: 165px;
+        height: 34px;
+        background: #A6B0C3;
+        border-radius: 4px;
+        border: none;
+        background-image: url('../images/calendar 1.png');
+        background-repeat: no-repeat;
+        background-position: 16px 5px;
+        padding: 9px 0 9px 28px;
+        margin: 11px 0;
+    }
+
+    .book-count {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 17px;
+        color: #222531;
+        margin: 20px 0;
+        margin-left: 330px;
+    }
+
+    .bookmarks-show {
+        display: none;
+        border: none;
+        background-color: #0D75FF;
+        color: white;
+        border-radius: 5px;
+        padding: 10px 10px;
+        margin: 5px 0;
+    }
+}
+
+.line {
+    border: 1px solid rgba(227, 230, 235, 1);
+}
+
+#books {
+    .bookmarks {
+        padding: 25px 25px 25px 0;
+        background-color: white;
+        width: 20% !important;
+        position: relative;
+
+        h2 {
+            font-family: 'Rubik';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 28px;
+            color: #000000;
+        }
+
+        .advice {
+            font-family: 'Rubik';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 155.6%;
+            color: #000000;
+            margin-top: 5px;
+        }
+
+        .bookmarks-close {
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            top: 25px;
+            right: 20px;
+            border: none;
+            background: none;
+        }
+
+        .bookmark {
+            padding: 15px 10px 5px 10px;
+            width: 100%;
+            background: #F8FAFD;
+            border-radius: 4px;
+            margin-top: 25px;
+            position: relative;
+
+            .bm-Btns {
+                position: absolute;
+                top: 27px;
+                right: 11px;
+
+                .delete-btn,
+                .read-btn {
+                    border: none;
+                    background: none;
+                }
+
+                .delete-btn {
+                    margin-left: 10px;
+                }
+            }
+
+            .bm-author {
+                font-family: 'Noto Sans';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 18px;
+                color: #757881;
+            }
+
+            .bm-title {
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+                color: #000000;
+                width: 150px;
+            }
+        }
+
+
+    }
+
+    .books-list {
+        width: 80%;
+        background-color: #E5E5E5;
+        padding: 40px 12px 40px 52px;
+
+        .card {
+            width: 300px !important;
+            padding: 13px 15px !important;
+            position: relative;
+            margin-bottom: 33px;
+            height: 451px !important;
+
+            .main-img {
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                left: 48px;
+                top: 31px;
+            }
+
+            .bg-img {
+                width: 100%;
+                height: 238px;
+            }
+
+            h3 {
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 21px;
+                color: #000000;
+                margin-top: 20px;
+            }
+
+            p {
+                font-family: 'Noto Sans';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 8px;
+                color: #757881;
+            }
+
+            .author {
+                margin-top: 5px;
+            }
+
+            .card-btns {
+                display: flex;
+                flex-wrap: wrap;
+
+                .bookmark-btn {
+                    background: #FFD80D;
+                    border-radius: 4px;
+                    font-family: 'Rubik';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 17px;
+                    padding: 10px 26px;
+                    color: #000000;
+                    width: 120px;
+                    border: none;
+                    margin-right: 5px;
+                }
+
+                .more-info-btn {
+                    background: rgba(13, 117, 255, 0.05);
+                    border-radius: 4px;
+                    font-family: 'Rubik';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #0D75FF;
+                    width: 140px;
+                    padding: 10px 30px;
+                    border: none;
+                }
+
+                .read-btn {
+                    width: 100%;
+                    height: 37px;
+                    background: #75828A;
+                    border-radius: 4px;
+                    padding: 10px 0;
+                    text-align: center;
+                    font-family: 'Rubik';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #FFFFFF;
+                    text-decoration: none;
+                    margin-top: 5px;
+                }
+            }
+
+        }
+    }
+}
+
+.modal {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Black w/ opacity */
+
+    .modal-content {
+        width: 40%;
+
+        .modal-Head {
+            margin-bottom: 45px;
+            background: #F8FAFD;
+            padding: 22px 32px;
+            position: relative;
+
+            h2 {
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 28px;
+                color: #222531;
+            }
+
+            button {
+                width: 15px;
+                height: 15px;
+                display: block;
+                background: none;
+                border: none;
+                position: absolute;
+                right: 32px;
+                top: 22px;
+            }
+        }
+
+        .modal-Body {
+            padding: 0 36px 0 46px;
+
+            .body-img {
+                display: flex;
+                margin-bottom: 52px;
+
+                img {
+                    width: 228.96px;
+                    height: 299.59px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+
+            .mdl-text {
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 170.3%;
+                color: #58667E;
+                margin-bottom: 70px;
+            }
+
+            p {
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                color: #222531;
+            }
+
+            .mc-value {
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                color: #0D75FF;
+                background-color: rgba(13, 117, 255, 0.09);
+                border-radius: 30px;
+                padding: 7px 20px;
+                display: inline-block;
+                margin-left: 11px;
+            }
+
+        }
+
+        .modal-Footer {
+            margin-top: 110px;
+            background: #FFFFFF;
+            box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+            padding: 16px 21px;
+
+            a {
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                padding: 10px 40px;
+                background: #75828A;
+                border-radius: 4px;
+                color: white;
+                text-decoration: none;
+                float: right;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1075px) {
+    .head {
+        img {
+            display: none;
+        }
+    }
+
+    #books .bookmarks .bookmark .bm-Btns {
+        position: static;
+    }
+
+    .modal {
+        width: 250% !important;
+    }
+}
+
+
+@media screen and (max-width:850px) {
+    .head .search {
+        width: 200% !important;
+    }
+
+    #books .books-list {
+        padding: 50px 30px;
+    }
+
+    .sm-container {
+        padding: 0 20px !important;
+    }
+
+    #books .bookmarks {
+        width: 40% !important;
+    }
+
+    #books .books-list {
+        width: 100% !important;
+    }
+
+    #books .books-list .card {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width:721px) {
+
+    #books .books-list {
+        padding: 50px 20px;
+    }
+
+    .head .search {
+        width: 150% !important;
+    }
+
+    .sm-container {
+        padding: 0 10px !important;
+    }
+
+    #result .order {
+        display: none;
+    }
+}
+
+@media screen and (max-width:465px) {
+
+    #books .bookmarks .bookmarks-close {
+        top: 5px;
+        right: 10px;
+    }
+
+    .sm-container {
+        padding: 0 5px !important;
+    }
+
+    .head .search {
+        width: 100% !important;
+    }
+
+    #books .books-list .card{
+        width: 100% !important;
+        height: 500px !important;
+
+        .main-img{
+            width: 230px;
+            left: 5%;
+        }
+    }
+    #books .books-list .card .card-btns .bookmark-btn,#books .books-list .card .card-btns .bookmark-btn{
+        margin-left: 0px !important;
+        // margin-left: auto !important;
+    }
+    #books .books-list .card .card-btns .bookmark-btn{
+        margin-top: 10px;
+    }
+}
