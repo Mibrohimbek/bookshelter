@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&family=Rubik:wght@400;500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -235,7 +237,7 @@
                     font-family: 'Rubik';
                     font-style: normal;
                     font-weight: 500;
-                    font-size: 14px;
+                    font-size: 13px;
                     line-height: 17px;
                     padding: 10px 26px;
                     color: #000000;
@@ -466,20 +468,23 @@
         width: 100% !important;
     }
 
-    #books .books-list .card{
+    #books .books-list .card {
         width: 100% !important;
         height: 500px !important;
 
-        .main-img{
+        .main-img {
             width: 230px;
             left: 5%;
         }
     }
-    #books .books-list .card .card-btns .bookmark-btn,#books .books-list .card .card-btns .bookmark-btn{
+
+    #books .books-list .card .card-btns .bookmark-btn,
+    #books .books-list .card .card-btns .bookmark-btn {
         margin-left: 0px !important;
         // margin-left: auto !important;
     }
-    #books .books-list .card .card-btns .bookmark-btn{
+
+    #books .books-list .card .card-btns .bookmark-btn {
         margin-top: 10px;
     }
 }

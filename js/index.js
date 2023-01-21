@@ -8,7 +8,6 @@ let bookmarks = document.querySelector(".bookmarks");
 let modal_content = document.querySelector(".modal-content");
 let book_count = 0;
 var arr_books = [];
-var arr_bookmarks = [];
 
 let email = "eve.holt@reqres.in";
 let password = "cityslicka";
@@ -130,14 +129,15 @@ async function getAPI() {
     });
     e.preventDefault();
 
+    var arr_bookmarks = [];
+
     // Bookmark yaratadi
     let bookmarkBtns = document.querySelectorAll(".bookmark-btn");
     bookmarkBtns.forEach((element) => {
       element.addEventListener("click", (e) => {
         e.preventDefault();
         for (i of data.items) {
-          if (i.id == element.id && !arr_bookmarks.includes(i)) {
-            arr_bookmarks.push(i);
+          if (i.id == element.id && !arr_bookmarks.includes(element)) {
             let box = document.createElement("div");
             let name = document.createElement("h3");
             let author = document.createElement("p");
@@ -167,10 +167,9 @@ async function getAPI() {
             bm_Btns.append(readBtn, deleteBtn);
             box.append(name, author, bm_Btns);
             bookmarks.appendChild(box);
-            // localStorage.setItem('bookmarks',arr_books)
-            console.log(arr_books);
           }
         }
+        arr_bookmarks.push(element);
       });
 
       // modal yaratadi
